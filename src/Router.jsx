@@ -7,6 +7,7 @@ import Loginchild from "./Google_Login/Loginchild"
 import CartChild from "./Components/Cart/CartChild"
 import CheckoutChild from "./Components/Checkout/CheckoutChild"
 import TicketChild from "./Components/Ticket/TicketChild"
+import Aichild from "./Components/AI/AiChild"
 
 const Router = createBrowserRouter([
     {
@@ -23,7 +24,8 @@ const Router = createBrowserRouter([
             Loginchild(),
             CartChild(),
             CheckoutChild(),
-            TicketChild()
+            TicketChild(),
+            Aichild()
         ]
     }
 
