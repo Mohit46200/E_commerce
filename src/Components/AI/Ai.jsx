@@ -23,7 +23,7 @@ function Ai() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://projects-backend-5.onrender.com/ai", {
+      const response = await fetch("https://projects-backend-6.onrender.com/ai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
