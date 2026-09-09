@@ -40,11 +40,14 @@ function Ai() {
       }
 
       // Show AI response
+      const functionName = data.functionCall.functionCall.name;
+      const functionArgs = data.functionCall.functionCall.args;
+
       setMessages((prev) => [
         ...prev,
         {
           role: "ai",
-          text: data.response,
+          text: `${functionName}\n${JSON.stringify(functionArgs, null, 2)}`,
         },
       ]);
     } catch (error) {
